@@ -1,23 +1,25 @@
 max_no_of_threads   % maximum number of threads *parallel operation* 
-16
+64
 
 no_of_groups % number of groups to conduct the test, e.g., fixed vs. fixed, fixed vs. random, etc. 
 2
 
-288'h$$$$$$$$00000000000000000000000000000000$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
-288'h$$$$$$$$0000000000000000000000000000000000000000000000000000000000000000
+256'h00000000000000000000000000000000$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+256'h0000000000000000000000000000000000000000000000000000000000000000
 
 clock_signal_name    % name of the clock signal
 ClkxCI
 
 max_clock_cycle   % maximum number of clock cycles per run before checking the end_condition 
-50
+230
 
 no_of_always_random_inputs % number of inputs which are fed randomly at every clock cycle 
-0
+1
+
+[21:0] random
 
 no_of_initial_inputs   % number of primary inputs during the initialization 
-9
+6
 
 no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start of encryption) 
 18
@@ -28,9 +30,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     8'h00
         RstxBI   1'b0
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random   23'b00000000000000000000000
-[7:0]   guard    8'b00000000
 
 [7:0]   PTxDI0    group_in0[7:0]
 [7:0]   PTxDI1    group_in1[7:0]
@@ -38,9 +37,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[135:128]
         RstxBI   1'b1
         StartxSI 1'b1
-        rg_start 1'b1
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[15:8]
 [7:0]   PTxDI1    group_in1[15:8]
@@ -48,9 +44,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[143:136]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[23:16]
 [7:0]   PTxDI1    group_in1[23:16]
@@ -58,9 +51,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[151:144]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[31:24]
 [7:0]   PTxDI1    group_in1[31:24]
@@ -68,9 +58,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[159:152]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[39:32]
 [7:0]   PTxDI1    group_in1[39:32]
@@ -78,9 +65,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[167:160]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[47:40]
 [7:0]   PTxDI1    group_in1[47:40]
@@ -88,9 +72,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[175:168]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[55:48]
 [7:0]   PTxDI1    group_in1[55:48]
@@ -98,9 +79,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[183:176]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[63:56]
 [7:0]   PTxDI1    group_in1[63:56]
@@ -108,9 +86,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[191:184]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[71:64]
 [7:0]   PTxDI1    group_in1[71:64]
@@ -118,9 +93,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[199:192]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[79:72]
 [7:0]   PTxDI1    group_in1[79:72]
@@ -128,9 +100,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[207:200]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[87:80]
 [7:0]   PTxDI1    group_in1[87:80]
@@ -138,9 +107,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[215:208]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[95:88]
 [7:0]   PTxDI1    group_in1[95:88]
@@ -148,9 +114,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[223:216]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[103:96]
 [7:0]   PTxDI1    group_in1[103:96]
@@ -158,9 +121,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[231:224]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[111:104]
 [7:0]   PTxDI1    group_in1[111:104]
@@ -168,9 +128,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[239:232]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[119:112]
 [7:0]   PTxDI1    group_in1[119:112]
@@ -178,9 +135,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[247:240]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    group_in0[127:120]
 [7:0]   PTxDI1    group_in1[127:120]
@@ -188,9 +142,6 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     group_in1[255:248]
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
 
 [7:0]   PTxDI0    8'h00
 [7:0]   PTxDI1    8'h00
@@ -198,15 +149,23 @@ no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start
 [7:0]   KxDI1     8'h00
         RstxBI   1'b1
         StartxSI 1'b0
-        rg_start 1'b0
-[22:0]  random group_in0[278:256]
-[7:0]   guard  group_in0[286:279]
-          
+
 end_condition    % the condition to check to terminate the simulation (e.g., done signal is high)
                  % or a numer of clock cycles, e.g., ClockCycles 5
 %DONE 1'b1
 %[31:0]  y    32'h89ABCE00
-ClockCycles 100
+ClockCycles 222
+
+no_of_outputs
+2
+
+[7:0] CxDO0
+[7:0] CxDO1
+
+expected_output
+
+8'h$$
+8'h66
 
 end_wait_cycles   % number of clock cycles to wait after the end_condition 
 0
@@ -234,15 +193,15 @@ no_of_test_clock_cycles % number of blocks to define clock cycles which should b
 1-50  % clock cycle 19-24
 
 no_of_simulations % total number of simulations (traces) in the tests, should be a factor of 64
-10000000
+100000000
 
 no_of_step_simulations % number of simulations in each step, should be a factor of 64, and a divisor of no_of_simulations
-80000
+1000000
 
 no_of_step_write_results % number of simulations in each step that result files are written, 
                          % should be a factor of 64, and a divisor of no_of_simulations and
                          % should be a factor of no_of_step_simulations
-80000
+1000000
 
 no_of_entries_in_report  % max number of entries in the report file with maximum leakage
 10                       % 0 : do not generate the report file
