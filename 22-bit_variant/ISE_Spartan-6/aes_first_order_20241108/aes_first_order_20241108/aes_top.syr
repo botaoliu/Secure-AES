@@ -1,0 +1,735 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: aes_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aes_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aes_top"
+Output Format                      : NGC
+Target Device                      : xc6slx75-2-csg484
+
+---- Source Options
+Top Module Name                    : aes_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\mix_columns.v" into library work
+Parsing module <mix_columns>.
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\sbox.v" into library work
+Parsing module <sbox>.
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\rcon.v" into library work
+Parsing module <rcon>.
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\aes_state_regs.v" into library work
+Parsing module <aes_state_regs>.
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\aes_key_regs.v" into library work
+Parsing module <aes_key_regs>.
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\aes_ctrl_lsfr.v" into library work
+Parsing module <aes_ctrl_lsfr>.
+Analyzing Verilog file "D:\lbt\aes\aes_first_order_20241108\aes_top.v" into library work
+Parsing module <aes_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <aes_top>.
+WARNING:HDLCompiler:1127 - "D:\lbt\aes\aes_first_order_20241108\aes_top.v" Line 85: Assignment to keypreliminary ignored, since the identifier is never used
+
+Elaborating module <aes_ctrl_lsfr>.
+WARNING:HDLCompiler:1127 - "D:\lbt\aes\aes_first_order_20241108\aes_top.v" Line 165: Assignment to StateIDLExS ignored, since the identifier is never used
+
+Elaborating module <rcon>.
+
+Elaborating module <sbox>.
+WARNING:HDLCompiler:413 - "D:\lbt\aes\aes_first_order_20241108\sbox.v" Line 646: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\lbt\aes\aes_first_order_20241108\sbox.v" Line 647: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\lbt\aes\aes_first_order_20241108\sbox.v" Line 651: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\lbt\aes\aes_first_order_20241108\sbox.v" Line 652: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <aes_key_regs>.
+
+Elaborating module <aes_state_regs>.
+
+Elaborating module <mix_columns>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <aes_top>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\aes_top.v".
+INFO:Xst:3210 - "D:\lbt\aes\aes_first_order_20241108\aes_top.v" line 164: Output port <StateIDLExS> of the instance <aes_ctrl_lsfr> is unconnected or connected to loadless signal.
+    Summary:
+	inferred  14 Multiplexer(s).
+Unit <aes_top> synthesized.
+
+Synthesizing Unit <aes_ctrl_lsfr>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\aes_ctrl_lsfr.v".
+        STATE_0 = 5'b00000
+        STATE_1 = 5'b00001
+        STATE_2 = 5'b00010
+        STATE_3 = 5'b00011
+        STATE_4 = 5'b00100
+        STATE_5 = 5'b00101
+        STATE_6 = 5'b00110
+        STATE_7 = 5'b00111
+        STATE_8 = 5'b01000
+        STATE_9 = 5'b01001
+        STATE_10 = 5'b01010
+        STATE_11 = 5'b01011
+        STATE_12 = 5'b01100
+        STATE_13 = 5'b01101
+        STATE_14 = 5'b01110
+        STATE_15 = 5'b01111
+        STATE_16 = 5'b10000
+        STATE_17 = 5'b10001
+        STATE_18 = 5'b10010
+        STATE_19 = 5'b10011
+        STATE_20 = 5'b10100
+        STATE_21 = 5'b10101
+        STATE_22 = 5'b10110
+    Found 5-bit register for signal <LSFRxDP>.
+    Found finite state machine <FSM_0> for signal <LSFRxDP>.
+    -----------------------------------------------------------------------
+    | States             | 23                                             |
+    | Transitions        | 25                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 15                                             |
+    | Clock              | ClkxCI (rising_edge)                           |
+    | Reset              | RstxBI (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <aes_ctrl_lsfr> synthesized.
+
+Synthesizing Unit <rcon>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\rcon.v".
+    Found 8-bit register for signal <RCONxDP>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <rcon> synthesized.
+
+Synthesizing Unit <sbox>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\sbox.v".
+    Found 2-bit register for signal <U1_0>.
+    Found 2-bit register for signal <U2_0>.
+    Found 2-bit register for signal <U3_0>.
+    Found 2-bit register for signal <U4_0>.
+    Found 2-bit register for signal <U5_0>.
+    Found 2-bit register for signal <U6_0>.
+    Found 2-bit register for signal <U7_0>.
+    Found 2-bit register for signal <t11_0_1>.
+    Found 2-bit register for signal <t11_1_1>.
+    Found 2-bit register for signal <t12_0_1>.
+    Found 2-bit register for signal <t12_1_1>.
+    Found 2-bit register for signal <t13_0_1>.
+    Found 2-bit register for signal <t13_1_1>.
+    Found 2-bit register for signal <t14_0_1>.
+    Found 2-bit register for signal <t14_1_1>.
+    Found 2-bit register for signal <t15_0_1>.
+    Found 2-bit register for signal <t15_1_1>.
+    Found 2-bit register for signal <t16_0_1>.
+    Found 2-bit register for signal <t16_1_1>.
+    Found 2-bit register for signal <U0_1>.
+    Found 2-bit register for signal <U1_1>.
+    Found 2-bit register for signal <U2_1>.
+    Found 2-bit register for signal <U3_1>.
+    Found 2-bit register for signal <U4_1>.
+    Found 2-bit register for signal <U5_1>.
+    Found 2-bit register for signal <U6_1>.
+    Found 2-bit register for signal <U7_1>.
+    Found 2-bit register for signal <t21_2>.
+    Found 2-bit register for signal <t22_2>.
+    Found 2-bit register for signal <t23_2>.
+    Found 2-bit register for signal <t24_2>.
+    Found 2-bit register for signal <U0_2>.
+    Found 2-bit register for signal <U1_2>.
+    Found 2-bit register for signal <U2_2>.
+    Found 2-bit register for signal <U3_2>.
+    Found 2-bit register for signal <U4_2>.
+    Found 2-bit register for signal <U5_2>.
+    Found 2-bit register for signal <U6_2>.
+    Found 2-bit register for signal <U7_2>.
+    Found 2-bit register for signal <t29_0_3>.
+    Found 2-bit register for signal <t29_1_3>.
+    Found 2-bit register for signal <t29_2_3>.
+    Found 2-bit register for signal <t29_3_3>.
+    Found 2-bit register for signal <t33_0_3>.
+    Found 2-bit register for signal <t33_1_3>.
+    Found 2-bit register for signal <t33_2_3>.
+    Found 2-bit register for signal <t33_3_3>.
+    Found 2-bit register for signal <t37_0_3>.
+    Found 2-bit register for signal <t37_1_3>.
+    Found 2-bit register for signal <t37_2_3>.
+    Found 2-bit register for signal <t37_3_3>.
+    Found 2-bit register for signal <t40_0_3>.
+    Found 2-bit register for signal <t40_1_3>.
+    Found 2-bit register for signal <t40_2_3>.
+    Found 2-bit register for signal <t40_3_3>.
+    Found 2-bit register for signal <U0_3>.
+    Found 2-bit register for signal <U1_3>.
+    Found 2-bit register for signal <U2_3>.
+    Found 2-bit register for signal <U3_3>.
+    Found 2-bit register for signal <U4_3>.
+    Found 2-bit register for signal <U5_3>.
+    Found 2-bit register for signal <U6_3>.
+    Found 2-bit register for signal <U7_3>.
+    Found 2-bit register for signal <t29_4>.
+    Found 2-bit register for signal <t33_4>.
+    Found 2-bit register for signal <t37_4>.
+    Found 2-bit register for signal <t40_4>.
+    Found 2-bit register for signal <U0_4>.
+    Found 2-bit register for signal <U1_4>.
+    Found 2-bit register for signal <U2_4>.
+    Found 2-bit register for signal <U3_4>.
+    Found 2-bit register for signal <U4_4>.
+    Found 2-bit register for signal <U5_4>.
+    Found 2-bit register for signal <U6_4>.
+    Found 2-bit register for signal <U7_4>.
+    Found 2-bit register for signal <s3_0_5>.
+    Found 2-bit register for signal <s3_1_5>.
+    Found 2-bit register for signal <s7_0_5>.
+    Found 2-bit register for signal <s7_1_5>.
+    Found 2-bit register for signal <s0_0_5>.
+    Found 2-bit register for signal <s0_1_5>.
+    Found 2-bit register for signal <s6_0_5>.
+    Found 2-bit register for signal <s6_1_5>.
+    Found 2-bit register for signal <s4_0_5>.
+    Found 2-bit register for signal <s4_1_5>.
+    Found 2-bit register for signal <s1_0_5>.
+    Found 2-bit register for signal <s1_1_5>.
+    Found 2-bit register for signal <s2_0_5>.
+    Found 2-bit register for signal <s2_1_5>.
+    Found 2-bit register for signal <s5_0_5>.
+    Found 2-bit register for signal <s5_1_5>.
+    Found 2-bit register for signal <U0_0>.
+    Summary:
+	inferred 184 D-type flip-flop(s).
+Unit <sbox> synthesized.
+
+Synthesizing Unit <aes_key_regs>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\aes_key_regs.v".
+    Found 8-bit register for signal <K01xDP>.
+    Found 8-bit register for signal <K02xDP>.
+    Found 8-bit register for signal <K03xDP>.
+    Found 8-bit register for signal <K10xDP>.
+    Found 8-bit register for signal <K11xDP>.
+    Found 8-bit register for signal <K12xDP>.
+    Found 8-bit register for signal <K13xDP>.
+    Found 8-bit register for signal <K20xDP>.
+    Found 8-bit register for signal <K21xDP>.
+    Found 8-bit register for signal <K22xDP>.
+    Found 8-bit register for signal <K23xDP>.
+    Found 8-bit register for signal <K30xDP>.
+    Found 8-bit register for signal <K31xDP>.
+    Found 8-bit register for signal <K32xDP>.
+    Found 8-bit register for signal <K33xDP>.
+    Found 8-bit register for signal <K00xDP>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <aes_key_regs> synthesized.
+
+Synthesizing Unit <aes_state_regs>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\aes_state_regs.v".
+    Found 8-bit register for signal <S01xDP>.
+    Found 8-bit register for signal <S02xDP>.
+    Found 8-bit register for signal <S03xDP>.
+    Found 8-bit register for signal <S10xDP>.
+    Found 8-bit register for signal <S11xDP>.
+    Found 8-bit register for signal <S12xDP>.
+    Found 8-bit register for signal <S13xDP>.
+    Found 8-bit register for signal <S20xDP>.
+    Found 8-bit register for signal <S21xDP>.
+    Found 8-bit register for signal <S22xDP>.
+    Found 8-bit register for signal <S23xDP>.
+    Found 8-bit register for signal <S30xDP>.
+    Found 8-bit register for signal <S31xDP>.
+    Found 8-bit register for signal <S32xDP>.
+    Found 8-bit register for signal <S33xDP>.
+    Found 8-bit register for signal <S00xDP>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred  18 Multiplexer(s).
+Unit <aes_state_regs> synthesized.
+
+Synthesizing Unit <mix_columns>.
+    Related source file is "D:\lbt\aes\aes_first_order_20241108\mix_columns.v".
+    Summary:
+Unit <mix_columns> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 157
+ 2-bit register                                        : 92
+ 8-bit register                                        : 65
+# Multiplexers                                         : 60
+ 8-bit 2-to-1 multiplexer                              : 60
+# FSMs                                                 : 1
+# Xors                                                 : 274
+ 1-bit xor2                                            : 161
+ 1-bit xor3                                            : 8
+ 1-bit xor4                                            : 46
+ 1-bit xor5                                            : 32
+ 1-bit xor6                                            : 4
+ 1-bit xor7                                            : 2
+ 32-bit xor3                                           : 4
+ 8-bit xor2                                            : 9
+ 8-bit xor5                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 704
+ Flip-Flops                                            : 704
+# Multiplexers                                         : 270
+ 1-bit 2-to-1 multiplexer                              : 240
+ 8-bit 2-to-1 multiplexer                              : 30
+# FSMs                                                 : 1
+# Xors                                                 : 274
+ 1-bit xor2                                            : 161
+ 1-bit xor3                                            : 8
+ 1-bit xor4                                            : 46
+ 1-bit xor5                                            : 32
+ 1-bit xor6                                            : 4
+ 1-bit xor7                                            : 2
+ 32-bit xor3                                           : 4
+ 8-bit xor2                                            : 9
+ 8-bit xor5                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <LSFRxDP[1:23]> with one-hot encoding.
+----------------------------------
+ State | Encoding
+----------------------------------
+ 00000 | 00000000000000000000001
+ 00001 | 00000000000000000000010
+ 00010 | 00000000000000000000100
+ 00011 | 00000000000000000001000
+ 00100 | 00000000000000000010000
+ 00101 | 00000000000000000100000
+ 00110 | 00000000000000001000000
+ 00111 | 00000000000000010000000
+ 01000 | 00000000000000100000000
+ 01001 | 00000000000001000000000
+ 01010 | 00000000000010000000000
+ 01011 | 00000000000100000000000
+ 01100 | 00000000001000000000000
+ 01101 | 00000000010000000000000
+ 01110 | 00000000100000000000000
+ 01111 | 00000001000000000000000
+ 10000 | 00000010000000000000000
+ 10001 | 00000100000000000000000
+ 10010 | 00001000000000000000000
+ 10011 | 00010000000000000000000
+ 10100 | 00100000000000000000000
+ 10101 | 01000000000000000000000
+ 10110 | 10000000000000000000000
+----------------------------------
+
+Optimizing unit <aes_top> ...
+
+Optimizing unit <sbox> ...
+
+Optimizing unit <rcon> ...
+
+Optimizing unit <aes_key_regs> ...
+
+Optimizing unit <aes_state_regs> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aes_top, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <aes_top> :
+	Found 4-bit shift register for signal <aes_sbox/U7_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U7_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U5_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U5_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U4_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U4_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U6_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U6_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U3_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U3_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U2_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U2_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U0_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U0_4_0>.
+	Found 4-bit shift register for signal <aes_sbox/U1_4_1>.
+	Found 4-bit shift register for signal <aes_sbox/U1_4_0>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_7>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_6>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_5>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_4>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_3>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_2>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_1>.
+	Found 12-bit shift register for signal <aes_key_regs2/K00xDP_0>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_7>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_6>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_5>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_4>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_3>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_2>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_1>.
+	Found 12-bit shift register for signal <aes_key_regs1/K00xDP_0>.
+Unit <aes_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 471
+ Flip-Flops                                            : 471
+# Shift Registers                                      : 32
+ 12-bit shift register                                 : 16
+ 4-bit shift register                                  : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : aes_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 643
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 45
+#      LUT3                        : 154
+#      LUT4                        : 110
+#      LUT5                        : 130
+#      LUT6                        : 201
+#      VCC                         : 1
+# FlipFlops/Latches                : 503
+#      FD                          : 376
+#      FDC                         : 22
+#      FDCE                        : 4
+#      FDE                         : 96
+#      FDP                         : 1
+#      FDPE                        : 4
+# Shift Registers                  : 32
+#      SRLC16E                     : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 73
+#      IBUF                        : 56
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx75csg484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             503  out of  93296     0%  
+ Number of Slice LUTs:                  673  out of  46648     1%  
+    Number used as Logic:               641  out of  46648     1%  
+    Number used as Memory:               32  out of  11072     0%  
+       Number used as SRL:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    733
+   Number with an unused Flip Flop:     230  out of    733    31%  
+   Number with an unused LUT:            60  out of    733     8%  
+   Number of fully used LUT-FF pairs:   443  out of    733    60%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          74
+ Number of bonded IOBs:                  74  out of    328    22%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ClkxCI                             | BUFGP                  | 535   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.930ns (Maximum Frequency: 144.308MHz)
+   Minimum input arrival time before clock: 4.857ns
+   Maximum output required time after clock: 10.493ns
+   Maximum combinational path delay: 8.420ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ClkxCI'
+  Clock period: 6.930ns (frequency: 144.308MHz)
+  Total number of paths / destination ports: 4775 / 639
+-------------------------------------------------------------------------
+Delay:               6.930ns (Levels of Logic = 5)
+  Source:            rcon/RCONxDP_2 (FF)
+  Destination:       aes_sbox/U0_0_1 (FF)
+  Source Clock:      ClkxCI rising
+  Destination Clock: ClkxCI rising
+
+  Data Path: rcon/RCONxDP_2 to aes_sbox/U0_0_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             6   0.525   1.104  rcon/RCONxDP_2 (rcon/RCONxDP_2)
+     LUT3:I0->O            1   0.235   0.682  rcon/LastRoundxSO<2>1 (LastRoundxS)
+     LUT5:I4->O           64   0.254   1.930  aes_ctrl_lsfr/doMixColumnsxS1 (doMixColumnsxS)
+     LUT5:I4->O            1   0.254   0.682  aes_state_regs2/Mmux_StateOutxDO1 (StateOutxD1<0>)
+     LUT6:I5->O            1   0.254   0.682  Mmux_CxDO183 (Mmux_CxDO182)
+     LUT6:I5->O            2   0.254   0.000  Mmux_CxDO184 (CxDO1_0_OBUF)
+     FD:D                      0.074          aes_sbox/U7_0_1
+    ----------------------------------------
+    Total                      6.930ns (1.850ns logic, 5.080ns route)
+                                       (26.7% logic, 73.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkxCI'
+  Total number of paths / destination ports: 141 / 109
+-------------------------------------------------------------------------
+Offset:              4.857ns (Levels of Logic = 4)
+  Source:            KxDI1<7> (PAD)
+  Destination:       aes_sbox/U0_0_1 (FF)
+  Destination Clock: ClkxCI rising
+
+  Data Path: KxDI1<7> to aes_sbox/U0_0_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.181  KxDI1_7_IBUF (KxDI1_7_IBUF)
+     LUT6:I0->O            2   0.254   0.834  Mmux_KeyInxD181 (KeyInxD1<7>)
+     LUT6:I4->O            1   0.250   0.682  Mmux_CxDO113 (Mmux_CxDO112)
+     LUT6:I5->O            2   0.254   0.000  Mmux_CxDO114 (CxDO1_7_OBUF)
+     FD:D                      0.074          aes_sbox/U0_0_1
+    ----------------------------------------
+    Total                      4.857ns (2.160ns logic, 2.697ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkxCI'
+  Total number of paths / destination ports: 806 / 17
+-------------------------------------------------------------------------
+Offset:              10.493ns (Levels of Logic = 6)
+  Source:            rcon/RCONxDP_2 (FF)
+  Destination:       CxDO0<7> (PAD)
+  Source Clock:      ClkxCI rising
+
+  Data Path: rcon/RCONxDP_2 to CxDO0<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             6   0.525   1.104  rcon/RCONxDP_2 (rcon/RCONxDP_2)
+     LUT3:I0->O            1   0.235   0.682  rcon/LastRoundxSO<2>1 (LastRoundxS)
+     LUT5:I4->O           64   0.254   1.930  aes_ctrl_lsfr/doMixColumnsxS1 (doMixColumnsxS)
+     LUT5:I4->O            1   0.254   0.682  aes_state_regs2/Mmux_StateOutxDO1 (StateOutxD1<0>)
+     LUT6:I5->O            1   0.254   0.682  Mmux_CxDO183 (Mmux_CxDO182)
+     LUT6:I5->O            2   0.254   0.725  Mmux_CxDO184 (CxDO1_0_OBUF)
+     OBUF:I->O                 2.912          CxDO1_0_OBUF (CxDO1<0>)
+    ----------------------------------------
+    Total                     10.493ns (4.688ns logic, 5.805ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 48 / 16
+-------------------------------------------------------------------------
+Delay:               8.420ns (Levels of Logic = 5)
+  Source:            KxDI0<7> (PAD)
+  Destination:       CxDO0<7> (PAD)
+
+  Data Path: KxDI0<7> to CxDO0<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.181  KxDI0_7_IBUF (KxDI0_7_IBUF)
+     LUT6:I0->O            2   0.254   0.834  Mmux_KeyInxD08 (KeyInxD0<7>)
+     LUT6:I4->O            1   0.250   0.682  Mmux_CxDO013 (Mmux_CxDO012)
+     LUT6:I5->O            2   0.254   0.725  Mmux_CxDO014 (CxDO0_7_OBUF)
+     OBUF:I->O                 2.912          CxDO0_7_OBUF (CxDO0<7>)
+    ----------------------------------------
+    Total                      8.420ns (4.998ns logic, 3.422ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ClkxCI
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkxCI         |    6.930|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.19 secs
+ 
+--> 
+
+Total memory usage is 230312 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

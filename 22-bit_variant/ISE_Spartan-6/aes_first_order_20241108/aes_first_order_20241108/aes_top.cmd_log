@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/lbt/aes/aes_first_order_20241108/aes_first_order_20241108/aes_top.xst" -ofn "D:/lbt/aes/aes_first_order_20241108/aes_first_order_20241108/aes_top.syr" 
+xst -intstyle ise -ifn "D:/lbt/aes/aes_first_order_20241108/aes_first_order_20241108/aes_top.xst" -ofn "D:/lbt/aes/aes_first_order_20241108/aes_first_order_20241108/aes_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx75-csg484-2 aes_top.ngc aes_top.ngd  
+map -intstyle ise -p xc6slx75-csg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_top_map.ncd aes_top.ngd aes_top.pcf 
+par -w -intstyle ise -ol high -mt off aes_top_map.ncd aes_top.ncd aes_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml aes_top.twx aes_top.ncd -o aes_top.twr aes_top.pcf 

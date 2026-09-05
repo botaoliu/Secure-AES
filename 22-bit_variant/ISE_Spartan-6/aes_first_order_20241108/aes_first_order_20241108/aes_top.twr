@@ -1,0 +1,178 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ise\xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml aes_top.twx aes_top.ncd -o aes_top.twr aes_top.pcf
+
+Design file:              aes_top.ncd
+Physical constraint file: aes_top.pcf
+Device,package,speed:     xc6slx75,csg484,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ClkxCI
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+KxDI0<0>    |    3.382(R)|      SLOW  |   -0.914(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<1>    |    3.487(R)|      SLOW  |   -0.720(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<2>    |    4.039(R)|      SLOW  |   -1.069(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<3>    |    3.544(R)|      SLOW  |   -0.611(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<4>    |    2.473(R)|      SLOW  |   -0.488(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<5>    |    2.539(R)|      SLOW  |   -0.037(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<6>    |    2.597(R)|      SLOW  |    0.313(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI0<7>    |    2.163(R)|      SLOW  |    0.185(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI1<0>    |    4.076(R)|      SLOW  |   -1.476(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+KxDI1<1>    |    3.992(R)|      SLOW  |   -1.322(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+KxDI1<2>    |    3.757(R)|      SLOW  |   -1.321(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+KxDI1<3>    |    4.156(R)|      SLOW  |   -1.406(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+KxDI1<4>    |    4.237(R)|      SLOW  |   -1.439(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+KxDI1<5>    |    4.142(R)|      SLOW  |   -1.517(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+KxDI1<6>    |    3.280(R)|      SLOW  |   -0.961(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+KxDI1<7>    |    3.741(R)|      SLOW  |   -1.129(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<0>   |    3.586(R)|      SLOW  |   -1.750(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<1>   |    3.405(R)|      SLOW  |   -1.710(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<2>   |    3.813(R)|      SLOW  |   -1.873(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<3>   |    3.756(R)|      SLOW  |   -1.910(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<4>   |    3.701(R)|      SLOW  |   -1.848(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<5>   |    3.011(R)|      SLOW  |   -1.479(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<6>   |    4.620(R)|      SLOW  |   -2.317(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI0<7>   |    4.411(R)|      SLOW  |   -2.261(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<0>   |    3.495(R)|      SLOW  |   -1.702(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<1>   |    3.524(R)|      SLOW  |   -1.730(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<2>   |    3.090(R)|      SLOW  |   -1.475(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<3>   |    3.383(R)|      SLOW  |   -1.707(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<4>   |    3.587(R)|      SLOW  |   -1.847(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<5>   |    3.012(R)|      SLOW  |   -1.507(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<6>   |    3.710(R)|      SLOW  |   -1.812(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+PTxDI1<7>   |    2.958(R)|      SLOW  |   -1.429(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+RstxBI      |    4.115(R)|      SLOW  |   -1.213(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+StartxSI    |    2.447(R)|      SLOW  |   -1.087(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+random<0>   |    4.721(R)|      SLOW  |   -2.469(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<1>   |    5.131(R)|      SLOW  |   -2.620(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<2>   |    4.662(R)|      SLOW  |   -2.129(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<3>   |    4.600(R)|      SLOW  |   -2.401(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<4>   |    4.136(R)|      SLOW  |   -1.837(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<5>   |    3.317(R)|      SLOW  |   -1.666(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<6>   |    4.036(R)|      SLOW  |   -1.950(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<7>   |    4.133(R)|      SLOW  |   -2.069(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<8>   |    3.512(R)|      SLOW  |   -1.663(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<9>   |    3.217(R)|      SLOW  |   -1.699(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<10>  |    3.259(R)|      SLOW  |   -1.603(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<11>  |    3.346(R)|      SLOW  |   -1.233(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+random<12>  |    3.227(R)|      SLOW  |   -1.492(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<13>  |    2.979(R)|      SLOW  |   -1.585(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<14>  |    4.132(R)|      SLOW  |   -1.947(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<15>  |    3.922(R)|      SLOW  |   -2.019(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<16>  |    3.920(R)|      SLOW  |   -1.807(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<17>  |    3.763(R)|      SLOW  |   -1.994(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<18>  |    3.625(R)|      SLOW  |   -1.838(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<19>  |    3.294(R)|      SLOW  |   -1.107(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+random<20>  |    3.448(R)|      SLOW  |   -1.735(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+random<21>  |    2.499(R)|      SLOW  |   -1.114(R)|      SLOW  |ClkxCI_BUFGP      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ClkxCI to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+CxDO0<0>    |        13.728(R)|      SLOW  |         4.707(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<1>    |        14.101(R)|      SLOW  |         4.560(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<2>    |        14.169(R)|      SLOW  |         4.566(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<3>    |        14.900(R)|      SLOW  |         4.890(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<4>    |        14.359(R)|      SLOW  |         4.305(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<5>    |        14.505(R)|      SLOW  |         4.371(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<6>    |        14.618(R)|      SLOW  |         4.594(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO0<7>    |        14.501(R)|      SLOW  |         4.742(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<0>    |        13.251(R)|      SLOW  |         4.359(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<1>    |        13.538(R)|      SLOW  |         4.370(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<2>    |        13.301(R)|      SLOW  |         4.119(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<3>    |        13.597(R)|      SLOW  |         4.033(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<4>    |        13.511(R)|      SLOW  |         3.976(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<5>    |        14.032(R)|      SLOW  |         3.908(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<6>    |        14.061(R)|      SLOW  |         4.313(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+CxDO1<7>    |        14.124(R)|      SLOW  |         4.367(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+DonexS      |        13.802(R)|      SLOW  |         4.997(R)|      FAST  |ClkxCI_BUFGP      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ClkxCI
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkxCI         |    5.178|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+KxDI0<0>       |CxDO0<0>       |   11.858|
+KxDI0<1>       |CxDO0<1>       |   12.186|
+KxDI0<2>       |CxDO0<2>       |   12.648|
+KxDI0<3>       |CxDO0<3>       |   12.743|
+KxDI0<4>       |CxDO0<4>       |   11.118|
+KxDI0<5>       |CxDO0<5>       |   11.230|
+KxDI0<6>       |CxDO0<6>       |   11.486|
+KxDI0<7>       |CxDO0<7>       |   11.058|
+KxDI1<0>       |CxDO1<0>       |   11.836|
+KxDI1<1>       |CxDO1<1>       |   11.930|
+KxDI1<2>       |CxDO1<2>       |   11.427|
+KxDI1<3>       |CxDO1<3>       |   11.870|
+KxDI1<4>       |CxDO1<4>       |   11.915|
+KxDI1<5>       |CxDO1<5>       |   12.153|
+KxDI1<6>       |CxDO1<6>       |   11.601|
+KxDI1<7>       |CxDO1<7>       |   12.078|
+PTxDI0<0>      |CxDO0<0>       |   12.062|
+PTxDI0<1>      |CxDO0<1>       |   12.104|
+PTxDI0<2>      |CxDO0<2>       |   12.422|
+PTxDI0<3>      |CxDO0<3>       |   12.955|
+PTxDI0<4>      |CxDO0<4>       |   12.346|
+PTxDI0<5>      |CxDO0<5>       |   11.702|
+PTxDI0<6>      |CxDO0<6>       |   13.509|
+PTxDI0<7>      |CxDO0<7>       |   13.306|
+PTxDI1<0>      |CxDO1<0>       |   11.255|
+PTxDI1<1>      |CxDO1<1>       |   11.462|
+PTxDI1<2>      |CxDO1<2>       |   10.760|
+PTxDI1<3>      |CxDO1<3>       |   11.097|
+PTxDI1<4>      |CxDO1<4>       |   11.265|
+PTxDI1<5>      |CxDO1<5>       |   11.023|
+PTxDI1<6>      |CxDO1<6>       |   12.031|
+PTxDI1<7>      |CxDO1<7>       |   11.295|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Nov 08 23:11:29 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 246 MB
+
+
+

@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_composite_enc.v,1731824244,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v,,AES_Composite_enc,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v,1731823418,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v,,aes_ctrl_lsfr,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v,1731823489,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_state_regs.v,,aes_key_regs,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_state_regs.v,1731823533,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_top.v,,aes_state_regs,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_top.v,1731824206,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/lbus_if.v,,aes_top,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v,1731823291,verilog,,,,CHIP_SASEBO_GIII_AES;MK_CLKRST;MK_RST,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/lbus_if.v,1731823347,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v,,LBUS_IF,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v,1731823860,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v,,mix_columns,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v,1731823671,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/sbox.v,,rcon,,,,,,,,
+E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/sbox.v,1731823713,verilog,,E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v,,sbox,,,,,,,,

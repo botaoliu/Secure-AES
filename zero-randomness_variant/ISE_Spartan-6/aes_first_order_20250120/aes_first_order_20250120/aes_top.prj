@@ -1,0 +1,7 @@
+verilog work "../mix_columns.v"
+verilog work "../sbox.v"
+verilog work "../rcon.v"
+verilog work "../aes_state_regs.v"
+verilog work "../aes_key_regs.v"
+verilog work "../aes_ctrl_lsfr.v"
+verilog work "../aes_top.v"

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  1711034329092830714  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CHIP_SASEBO_GIII_AES_behav xil_defaultlib.CHIP_SASEBO_GIII_AES xil_defaultlib.glbl" , 
+    buildDate : "Oct 19 2021" , 
+    buildTime : "03:16:22" , 
+    linkCmd : "F:\\Xilinx\\Vivado\\2021.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/CHIP_SASEBO_GIII_AES_behav/xsimk.exe\"   \"xsim.dir/CHIP_SASEBO_GIII_AES_behav/obj/xsim_0.win64.obj\" \"xsim.dir/CHIP_SASEBO_GIII_AES_behav/obj/xsim_1.win64.obj\" -L\"F:\\Xilinx\\Vivado\\2021.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

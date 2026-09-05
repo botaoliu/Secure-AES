@@ -1,0 +1,561 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Nov 20 21:54:02 2024
+# Process ID: 21948
+# Current directory: E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.runs/synth_1
+# Command line: vivado.exe -log CHIP_SASEBO_GIII_AES.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CHIP_SASEBO_GIII_AES.tcl
+# Log file: E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.runs/synth_1/CHIP_SASEBO_GIII_AES.vds
+# Journal file: E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.runs/synth_1\vivado.jou
+# Running On: DESKTOP-9HOBVT1, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 34166 MB
+#-----------------------------------------------------------
+source CHIP_SASEBO_GIII_AES.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/utils_1/imports/synth_1/CHIP_SASEBO_GIII_AES.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/utils_1/imports/synth_1/CHIP_SASEBO_GIII_AES.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CHIP_SASEBO_GIII_AES -part xc7k160tfbg676-1 -flatten_hierarchy none -resource_sharing off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tfbg676-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23236
+WARNING: [Synth 8-2611] redeclaration of ansi port StateIDLExS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:66]
+WARNING: [Synth 8-2611] redeclaration of ansi port State1xS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:67]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateKEYADDITION1o3xS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:68]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateKEYADDITION2o3xS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:69]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateKEYADDITION3o3xS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:70]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateKEYSCHEDULExS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:71]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateSHIFTROWSxS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:72]
+WARNING: [Synth 8-2611] redeclaration of ansi port doMixColumnsxS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:73]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateSBOXxS is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:74]
+WARNING: [Synth 8-2611] redeclaration of ansi port forthcylies1 is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:75]
+WARNING: [Synth 8-2611] redeclaration of ansi port forthcylies2 is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port forthcylies3 is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:77]
+WARNING: [Synth 8-2611] redeclaration of ansi port forthcylies4 is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:78]
+WARNING: [Synth 8-2611] redeclaration of ansi port KeyOutxDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v:35]
+WARNING: [Synth 8-2611] redeclaration of ansi port KeyToSboxOutxDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port K03xDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v:37]
+WARNING: [Synth 8-2611] redeclaration of ansi port StateOutxDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_state_regs.v:30]
+WARNING: [Synth 8-2611] redeclaration of ansi port B0xDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port B1xDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port B2xDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v:35]
+WARNING: [Synth 8-2611] redeclaration of ansi port B3xDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port LastRoundxSO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port FinishedxSO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port RCONxDO is not allowed [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CHIP_SASEBO_GIII_AES' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v:34]
+INFO: [Synth 8-6157] synthesizing module 'LBUS_IF' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/lbus_if.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'LBUS_IF' (1#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/lbus_if.v:37]
+INFO: [Synth 8-6157] synthesizing module 'AES_Composite_enc' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_composite_enc.v:34]
+INFO: [Synth 8-6157] synthesizing module 'aes_top' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'aes_ctrl_lsfr' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aes_ctrl_lsfr' (2#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_ctrl_lsfr.v:22]
+INFO: [Synth 8-6157] synthesizing module 'rcon' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'rcon' (3#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/rcon.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (4#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-6157] synthesizing module 'aes_key_regs' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aes_key_regs' (5#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_key_regs.v:22]
+INFO: [Synth 8-6157] synthesizing module 'aes_state_regs' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_state_regs.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mix_columns' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mix_columns' (6#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/mix_columns.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aes_state_regs' (7#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_state_regs.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aes_top' (8#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_top.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Composite_enc' (9#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/aes_composite_enc.v:34]
+INFO: [Synth 8-6157] synthesizing module 'MK_CLKRST' [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v:131]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55688]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (10#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55688]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (11#1) [F:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+WARNING: [Synth 8-3848] Net rst in module/entity MK_CLKRST does not have driver. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'MK_CLKRST' (12#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'CHIP_SASEBO_GIII_AES' (13#1) [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/sources_1/new/chip_sasebo_giii_aes.v:34]
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port gpio_endn driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port gpio_exec driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port osc_en_b driven by constant 0
+WARNING: [Synth 8-7129] Port rst in module MK_CLKRST is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rstnin in module MK_CLKRST is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[383] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[382] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[381] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[380] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[379] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[378] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[377] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[376] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[375] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[374] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[373] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[372] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[371] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[370] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[369] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[368] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[367] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[366] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[365] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[364] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[363] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[362] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[361] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[360] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[359] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[358] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[357] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[356] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[355] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[354] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[353] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[352] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[351] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[350] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[349] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[348] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[347] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[346] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[345] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[344] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[343] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[342] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[341] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[340] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[339] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[338] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[337] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[336] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[335] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[334] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[333] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[332] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[331] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[330] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[329] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[328] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[327] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[326] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[325] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[324] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[323] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[322] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[321] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[320] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[319] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[318] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[317] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[316] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[315] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[314] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[313] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[312] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[311] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[310] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[309] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[308] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[307] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[306] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[305] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[304] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[303] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[302] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[301] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[300] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[299] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[298] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[297] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[296] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[295] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[294] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[293] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[292] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[291] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[290] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[289] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[288] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[287] in module AES_Composite_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Kin[286] in module AES_Composite_enc is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1250.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1250.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1250.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1250.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'mk_clkrst/u10' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc]
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_10_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_11_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_12_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_13_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_14_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_15_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD0_inferred_i_16_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_10_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_11_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_12_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_13_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_14_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_15_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/SboxInxD1_inferred_i_16_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_10_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_11_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_12_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_13_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_14_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_15_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxDO_inferred_i_16_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_10_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_11_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_12_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_13_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_14_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_15_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs1/KeyToSboxOutxD1_inferred_i_16_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_10_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_11_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_12_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_13_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_14_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_15_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AES_Composite_enc/aes_top/aes_key_regs2/KeyToSboxOutxDO_inferred_i_16_n_0'. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.srcs/constrs_1/new/sakura-x.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CHIP_SASEBO_GIII_AES_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CHIP_SASEBO_GIII_AES_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1306.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1306.402 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'LSFRxDP_reg' in module 'aes_ctrl_lsfr'
+INFO: [Synth 8-6159] Found Keep on FSM register 'LSFRxDN_reg' in module 'aes_ctrl_lsfr', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 STATE_0 |                            00000 |                            00000
+                 STATE_1 |                            00001 |                            00001
+                 STATE_2 |                            00010 |                            00010
+                 STATE_3 |                            00011 |                            00011
+                 STATE_4 |                            00100 |                            00100
+                 STATE_5 |                            00101 |                            00101
+                 STATE_6 |                            00110 |                            00110
+                 STATE_7 |                            00111 |                            00111
+                 STATE_8 |                            01000 |                            01000
+                 STATE_9 |                            01001 |                            01001
+                STATE_10 |                            01010 |                            01010
+                STATE_11 |                            01011 |                            01011
+                STATE_12 |                            01100 |                            01100
+                STATE_13 |                            01101 |                            01101
+                STATE_14 |                            01110 |                            01110
+                STATE_15 |                            01111 |                            01111
+                STATE_16 |                            10000 |                            10000
+                STATE_17 |                            10001 |                            10001
+                STATE_18 |                            10010 |                            10010
+                STATE_19 |                            10011 |                            10011
+                STATE_20 |                            10100 |                            10100
+                STATE_21 |                            10101 |                            10101
+                STATE_22 |                            10110 |                            10110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'LSFRxDP_reg' in module 'aes_ctrl_lsfr', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 STATE_0 |                            00000 |                            00000
+                 STATE_1 |                            00001 |                            00001
+                 STATE_2 |                            00010 |                            00010
+                 STATE_3 |                            00011 |                            00011
+                 STATE_4 |                            00100 |                            00100
+                 STATE_5 |                            00101 |                            00101
+                 STATE_6 |                            00110 |                            00110
+                 STATE_7 |                            00111 |                            00111
+                 STATE_8 |                            01000 |                            01000
+                 STATE_9 |                            01001 |                            01001
+                STATE_10 |                            01010 |                            01010
+                STATE_11 |                            01011 |                            01011
+                STATE_12 |                            01100 |                            01100
+                STATE_13 |                            01101 |                            01101
+                STATE_14 |                            01110 |                            01110
+                STATE_15 |                            01111 |                            01111
+                STATE_16 |                            10000 |                            10000
+                STATE_17 |                            10001 |                            10001
+                STATE_18 |                            10010 |                            10010
+                STATE_19 |                            10011 |                            10011
+                STATE_20 |                            10100 |                            10100
+                STATE_21 |                            10101 |                            10101
+                STATE_22 |                            10110 |                            10110
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 15    
+	   4 Input      8 Bit         XORs := 8     
+	   3 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 172   
+	   5 Input      1 Bit         XORs := 26    
+	   6 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 18    
+	   4 Input      1 Bit         XORs := 51    
++---Registers : 
+	              384 Bit    Registers := 3     
+	              128 Bit    Registers := 6     
+	              124 Bit    Registers := 1     
+	               31 Bit    Registers := 4     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 69    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 93    
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 8     
+	   2 Input   31 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 48    
+	   2 Input    8 Bit        Muxes := 85    
+	  24 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 13    
+	   7 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port gpio_endn driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port gpio_exec driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design CHIP_SASEBO_GIII_AES has port osc_en_b driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |   116|
+|3     |LUT2  |   271|
+|4     |LUT3  |  1047|
+|5     |LUT4  |   285|
+|6     |LUT5  |   683|
+|7     |LUT6  |   445|
+|8     |MUXF7 |    44|
+|9     |MUXF8 |     5|
+|10    |FDCE  |  2250|
+|11    |FDPE  |     5|
+|12    |FDRE  |   729|
+|13    |IBUF  |    19|
+|14    |IBUFG |     1|
+|15    |OBUF  |    30|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1306.402 ; gain = 55.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 143 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1306.402 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1306.402 ; gain = 55.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1306.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'mk_clkrst/u10' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1306.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+Synth Design complete, checksum: 589817a4
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 175 Warnings, 35 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 1306.402 ; gain = 55.570
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/sakura-x/aes/first_order/low_resource_random_b/low_resource_random_b/low_resource_random_b.runs/synth_1/CHIP_SASEBO_GIII_AES.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CHIP_SASEBO_GIII_AES_utilization_synth.rpt -pb CHIP_SASEBO_GIII_AES_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 21:54:56 2024...

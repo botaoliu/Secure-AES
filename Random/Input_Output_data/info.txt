@@ -1,0 +1,7 @@
+trace number:10000000
+sample rate:250M
+sample points:20000
+signal type:AC
+input voltage:50
+trigger level:150
+trigger position:0 %

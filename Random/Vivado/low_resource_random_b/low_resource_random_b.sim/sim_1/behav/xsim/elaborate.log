@@ -1,0 +1,26 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CHIP_SASEBO_GIII_AES_behav xil_defaultlib.CHIP_SASEBO_GIII_AES xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LBUS_IF
+Compiling module xil_defaultlib.aes_ctrl_lsfr
+Compiling module xil_defaultlib.rcon
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.aes_key_regs
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.aes_state_regs
+Compiling module xil_defaultlib.aes_top
+Compiling module xil_defaultlib.AES_Composite_enc
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.IBUFG
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.MK_CLKRST
+Compiling module xil_defaultlib.CHIP_SASEBO_GIII_AES
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CHIP_SASEBO_GIII_AES_behav

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "CHIP_SASEBO_GIII_AES_behav" "xil_defaultlib.CHIP_SASEBO_GIII_AES" "xil_defaultlib.glbl" -log "elaborate.log" 
